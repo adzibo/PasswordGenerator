@@ -109,8 +109,7 @@ La entropía representa cuántas combinaciones posibles existen. Cuanto mayor se
 ## 6️⃣ Decisiones técnicas y fundamentos de seguridad:
 
 La función `generar_password(longitud, nivel)` crea contraseñas aleatorias según el nivel de seguridad.<br>
-En el nivel 1 usa solo números; en el nivel 2, letras (asegurando mayúsculas y minúsculas); en el nivel 3 añade números; y en el nivel 4 incluye también símbolos.<br>
-En los niveles más altos se garantiza que haya al menos un carácter de cada tipo y luego se mezclan para evitar patrones.<br>
+En el nivel 1 usa solo números; en el nivel 2, letras (asegurando mayúsculas y minúsculas); en el nivel 3 añade números; y en el nivel 4 incluye también símbolos. En los niveles más altos se garantiza que haya al menos un carácter de cada tipo y luego se mezclan para evitar patrones.
 
 A la hora de generar contraseñas seguras, no basta con que sean aleatorias, deben ser **criptográficamente impredecibles**. En Python, el módulo `random` **no es seguro para este propósito**, ya que está diseñado para simulaciones y puede ser predecible si un atacante conoce el estado interno del generador.
 

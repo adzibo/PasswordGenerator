@@ -1,6 +1,6 @@
 # 🔐 PasswdGen
 
-**PasswdGen** es una herramienta generadora de contraseñas mediante el uso de mecanismos criptográficos robustos.
+**PasswdGen** es una herramienta generadora de contraseñas mediante el uso de mecanismos **criptográficos robustos**.
 
 El objetivo principal de esta herramienta es proporcionar una forma **rápida**, **flexible** y **fiable** de generar contraseñas con distintos niveles de complejidad, adaptadas tanto a usuarios individuales como a entornos técnicos más exigentes.
 
@@ -20,8 +20,9 @@ El objetivo principal de esta herramienta es proporcionar una forma **rápida**,
 
 PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 
-> 📋**COPIA AUTOMÁTICA AL PORTAPAPELES**:<br>
-> La funcionalidad de copia automática al portapapeles utiliza **pyperclip**[^1], que a su vez fuerza el uso de la herramienta **xclip**[^2].<br>
+> ### 📋Copia Automática al Portapapeles:
+> La funcionalidad de copia automática al portapapeles utiliza **pyperclip**[^1], que a su vez fuerza el uso de la herramienta **xclip**[^2].
+>
 > Puedes verificar si **xclip** está instalado con **`which xclip`**, o en su defecto, instalarlo ejecutando el siguiente comando:
 >```bash
 >sudo apt install xclip
@@ -29,9 +30,10 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 
 <br>
 
->🚀 **INSTALACIÓN CON PIPX**:<br>
->Realizaremos la instalación de PasswdGen mediante **pipx**[^3].<br>
->Puedes verificar si **pipx** está instalado ejecutando **`which pipx`**, o en su defecto, instalarlo ejecutando los siguientes comandos:<br>
+>### 🚀 Instalación con pipx:
+>Realizaremos la instalación de PasswdGen mediante **pipx**[^3].
+>
+>Puedes verificar si **pipx** está instalado ejecutando **`which pipx`**, o en su defecto, instalarlo ejecutando los siguientes comandos:
 >```bash
 >sudo apt install pipx
 >```
@@ -39,19 +41,19 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 >pipx ensurepath
 >```
 >
->Ejecutar **`pipx ensurepath`** después de la instalación, es necesario para añadir el directorio de ejecutables de pipx a la variable de entorno PATH, permitiendo a la terminal reconocer y ejecutar las aplicaciones instaladas desde cualquier ubicación.<br>
+>Ejecutar **`pipx ensurepath`** después de la instalación, es necesario para añadir el directorio de ejecutables de pipx a la variable de entorno PATH, permitiendo a la terminal reconocer y ejecutar las aplicaciones instaladas desde cualquier ubicación.
 >
 >El **reinicio de la terminal** es indispensable para que la shell recargue los archivos de configuración actualizados y aplique estos cambios.
 
 ---
 ## 3️⃣ Instalación:
 
-⚪ Clona el repositorio y accede a él:<br>
+⚪ Clona el repositorio y accede a él:
 ```bash
 git clone https://github.com/adzibo
 cd PasswdGenerator
 ```
-⚪ Instala PasswdGen ejecutando la siguiente comanda:<br>
+⚪ Instala PasswdGen ejecutando la siguiente comanda:
 ```bash
 pipx install .
 ```
@@ -77,15 +79,15 @@ Las opciones disponibles son las siguientes:
 
 Veamos unos ejemplos usando el modo CLI:
 
-⚪ Generar una contraseña:<br>
+⚪ Generar una contraseña:
 ```bash
 passwdgen -l 20 -c 4
 ```
-⚪ Generar diez contraseñas:<br>
+⚪ Generar diez contraseñas:
 ```bash
 passwdgen -l 20 -c 4 -n 10
 ```
-⚪ Generar veinte contraseñas y guardarlas en un archivo (sin copiar al portapapeles):<br>
+⚪ Generar veinte contraseñas y guardarlas en un archivo (sin copiar al portapapeles):
 ```bash
 passwdgen -l 20 -c 4 -n 20 -o password.txt --no-clipboard
 ```
@@ -97,7 +99,6 @@ La entropía es una medida de la **fortaleza teórica de una contraseña**, expr
 
 La fórmula utilizada es:<br>
 $$bits = longitud × log2(pool)$$
->
 >**$longitud$** → número de caracteres de la contraseña<br>
 >**$pool$** → conjunto de caracteres posibles (por ejemplo: letras, números, símbolos)
 

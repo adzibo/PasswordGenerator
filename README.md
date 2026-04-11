@@ -28,8 +28,6 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 >sudo apt install xclip
 >```
 
-<br>
-
 >### 🚀 Instalación con pipx:
 >Realizaremos la instalación de PasswdGen mediante **pipx**[^3].
 >

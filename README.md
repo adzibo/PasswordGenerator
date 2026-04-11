@@ -108,14 +108,14 @@ La entropía representa cuántas combinaciones posibles existen. Cuanto mayor se
 
 ## 6️⃣ Decisiones técnicas y fundamentos de seguridad:
 
-La función `generar_password(longitud, nivel)` crea contraseñas aleatorias según el nivel de seguridad. En el nivel 1 usa solo números; en el nivel 2, letras (asegurando mayúsculas y minúsculas); en el nivel 3 añade números; y en el nivel 4 incluye también símbolos. 
-En los niveles más altos se garantiza que haya al menos un carácter de cada tipo y luego se mezclan para evitar patrones.
+La función `generar_password(longitud, nivel)` crea contraseñas aleatorias según el nivel de seguridad.<br>
+En el nivel 1 usa solo números; en el nivel 2, letras (asegurando mayúsculas y minúsculas); en el nivel 3 añade números; y en el nivel 4 incluye también símbolos.<br>
+En los niveles más altos se garantiza que haya al menos un carácter de cada tipo y luego se mezclan para evitar patrones.<br>
 
 A la hora de generar contraseñas seguras, no basta con que sean aleatorias, deben ser **criptográficamente impredecibles**. En Python, el módulo `random` **no es seguro para este propósito**, ya que está diseñado para simulaciones y puede ser predecible si un atacante conoce el estado interno del generador.
 
 Es más seguro usar `secrets.SystemRandom().shuffle(password)` porque utiliza fuentes de aleatoriedad del sistema operativo mucho más difíciles de predecir. Además, con el uso del generador `shuffle`, aseguro que el orden final de los caracteres también sea impredecible, aumentando la seguridad de la contraseña generada.
 
----
 [^1]: **Pyperclip** es una biblioteca de Python que proporciona funciones multiplataforma para copiar y pegar texto en el portapapeles.
 [^2]: **xclip** es una utilidad de línea de comandos para sistemas basados en el **X Window System** que permite acceder y manipular los portapapeles gráficos desde la terminal. Se usa comúnmente para copiar y pegar texto o datos entre aplicaciones gráficas y sesiones de consola en entornos Linux y UNIX.
 [^3]: **pipx** es una herramienta de línea de comandos del ecosistema de Python que permite instalar y ejecutar aplicaciones Python en entornos virtuales aislados. Desarrollado bajo la Python Packaging Authority, facilita el uso de herramientas de consola sin interferir con las dependencias del sistema o de otros proyectos.

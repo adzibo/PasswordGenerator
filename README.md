@@ -1,6 +1,6 @@
-# 🔐 PasswdGen
+# 🔐 PasswordGenerator
 
-**PasswdGen** es una herramienta generadora de contraseñas mediante el uso de mecanismos **criptográficos robustos**.
+**PasswordGenerator** es una herramienta generadora de contraseñas mediante el uso de mecanismos **criptográficos robustos**.
 
 El objetivo principal de esta herramienta es proporcionar una forma **rápida**, **flexible** y **fiable** de generar contraseñas con distintos niveles de complejidad, adaptadas tanto a usuarios individuales como a entornos técnicos más exigentes.
 
@@ -48,8 +48,8 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 
 ⚪ Clona el repositorio y accede a él:
 ```bash
-git clone https://github.com/adzibo
-cd PasswdGenerator
+git clone https://github.com/adzibo/PasswordGenerator.git
+cd PasswordGenerator
 ```
 ⚪ Instala PasswdGen ejecutando la siguiente comanda:
 ```bash

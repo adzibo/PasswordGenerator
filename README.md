@@ -21,7 +21,13 @@ El objetivo principal de esta herramienta es proporcionar una forma **rápida**,
 PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 
 > ### 📋Copia Automática al Portapapeles:
-> La funcionalidad de copia automática al portapapeles utiliza **pyperclip**[^1], que a su vez fuerza el uso de la herramienta **xclip**[^2].
+> La funcionalidad de copia automática al portapapeles utiliza **pyperclip** [^1]<br>
+> En Linux, personalmente, recomiendo forzar pyperclip a usar **xclip** [^2]
+> 
+> Para ello, simplemente descomenta la siguiente línea de **`passwdgen.py`**:
+>```bash
+># pyperclip.set_clipboard("xclip")
+>```
 >
 > Puedes verificar si **xclip** está instalado con **`which xclip`**, o en su defecto, instalarlo ejecutando el siguiente comando:
 >```bash
@@ -29,7 +35,7 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 >```
 
 >### 🚀 Instalación con pipx:
->Realizaremos la instalación de PasswdGen mediante **pipx**[^3].
+>Realizaremos la instalación de PasswdGen mediante **pipx** [^3]
 >
 >Puedes verificar si **pipx** está instalado ejecutando **`which pipx`**, o en su defecto, instalarlo ejecutando los siguientes comandos:
 >```bash
@@ -39,9 +45,9 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 >pipx ensurepath
 >```
 >
->Ejecutar **`pipx ensurepath`** después de la instalación, es necesario para añadir el directorio de ejecutables de pipx a la variable de entorno PATH, permitiendo a la terminal reconocer y ejecutar las aplicaciones instaladas desde cualquier ubicación.
+>Ejecutar **`pipx ensurepath`** después de la instalación, es necesario para añadir el directorio de ejecutables de pipx a la variable de entorno PATH, permitiendo a la terminal reconocer y ejecutar las aplicaciones instaladas desde cualquier ubicación
 >
->El **reinicio de la terminal** es indispensable para que la shell recargue los archivos de configuración actualizados y aplique estos cambios.
+>El **reinicio de la terminal** es indispensable para que la shell recargue los archivos de configuración actualizados y aplique estos cambios
 
 ---
 ## 3️⃣ Instalación:
@@ -51,7 +57,7 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 git clone https://github.com/adzibo/PasswordGenerator.git
 cd PasswordGenerator
 ```
-⚪ Instala PasswdGen ejecutando la siguiente comanda:
+⚪ Instala la herramienta PasswdGen ejecutando el siguiente comando:
 ```bash
 pipx install .
 ```

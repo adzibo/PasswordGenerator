@@ -16,7 +16,7 @@ El objetivo principal de esta herramienta es proporcionar una forma **rápida**,
 - 💾 Exportación a archivo.
 
 ---
-## 2️⃣ Requisitos del Sistema:
+## 2️⃣ Dependencias:
 
 PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 

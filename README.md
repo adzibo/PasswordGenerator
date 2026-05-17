@@ -20,7 +20,7 @@ El objetivo principal de esta herramienta es proporcionar una forma **rápida**,
 
 PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 
-> ### 📋Copia Automática al Portapapeles:
+> ### 📋pyperclip:
 > La funcionalidad de copia automática al portapapeles utiliza **pyperclip** [^1]<br>
 > En Linux, personalmente, recomiendo forzar pyperclip a usar **xclip** [^2]
 > 
@@ -34,7 +34,7 @@ PasswdGen está diseñado para funcionar en sistemas Linux/Unix.
 >sudo apt install xclip
 >```
 
->### 🚀 Instalación con pipx:
+>### 🚀 pipx:
 >Realizaremos la instalación de PasswdGen mediante **pipx** [^3]
 >
 >Puedes verificar si **pipx** está instalado ejecutando **`which pipx`**, o en su defecto, instalarlo ejecutando los siguientes comandos:
